@@ -3,11 +3,82 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Register</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/public/css/commonCss.css">
+    <link rel="stylesheet" href="/public/css/register.css">
+    <link rel="icon" href="/public/images/logo.svg" type="image/x-icon">
 </head>
 
 <body>
+
+
+    <div class="d-flex flex-column justify-content-center align-items-center vh-100 fs-6">
+        <div class="container overflow-hidden d-flex flex-row p-0 h-75 rounded-3 ">
+
+            <div class="bg-img w-50 p-5">
+
+                <div class="d-flex flex-column justify-content-center align-items-center h-100 ">
+                    <img src="/public/images/logo.svg" alt="CineStream Logo" class="logo ">
+                    <h1 class="text-center fw-bold mt-4 mb-4 fs-2">
+                        Start Your CineStream Journey!
+                    </h1>
+                    <p class="text-center fs-5">
+                        Dive into a vast collection of movies and <br> personalized recommendations.
+                    </p>
+                </div>
+
+            </div>
+
+            <div action="" class="form-bg-color w-50 p-5">
+                <h1 class="fs-2">
+                    Create Your CimaStream Account
+                </h1>
+
+                <p class="txt-gray ">
+                    Unlock a world of movies and TV shows.
+                </p>
+
+                <form class="row g-3 needs-validation mt-5  text-light" novalidate>
+                    <div class="col-md-6">
+                        <label for="validationCustom01" class="form-label ">First name</label>
+                        <input type="text" class="form-control custom-input " id="validationCustom01" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="validationCustom02" class="form-label">Last name</label>
+                        <input type="text" class="form-control custom-input " id="validationCustom02" required>
+                    </div>
+
+                    <div class="col-md-12">
+                        <label for="validationCustom03" class="form-label">Email</label>
+                        <input type="email" class="form-control custom-input " id="validationCustom03" required>
+                    </div>
+
+                    <div class="col-md-12">
+                        <label for="validationCustom03" class="form-label">Password</label>
+                        <input type="password" class="form-control custom-input " id="validationCustom03" required>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="validationCustom03" class="form-label">Re-Password</label>
+                        <input type="password" class="form-control custom-input " id="validationCustom03" required>
+                    </div>
+
+                    <div class="col-12">
+                        <button class="btn btn-primary w-100 p-2 btn-custom" type="submit">Register</button>
+                    </div>
+
+                </form>
+                <p class="text-center mt-4 txt-gray">
+                    Already have an account? <a href="/public/pages/login.html" class=" txt-gray fw-bold">Login</a>
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="/public/js/register.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 

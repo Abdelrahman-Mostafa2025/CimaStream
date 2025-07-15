@@ -1,0 +1,48 @@
+:root {
+    --dark-light-color: #1A1A1A;
+    --gray-color: #8C8D8B;
+    --bluish-gray-color: #393D47;
+    --dark-gray: #212121;
+}
+
+body {
+    color: white;
+    background-color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.form-bg-color {
+    background-color: var(--dark-light-color);
+}
+
+.txt-gray {
+    color: var(--gray-color);
+}
+
+.txt-dark-gray {
+    color: var(--dark-gray);
+}
+
+
+.custom-input {
+    background-color: var(--bluish-gray-color);
+    border-color: var(--bluish-gray-color);
+    color: var(--gray-color);
+}
+
+.custom-input:focus {
+    background-color: var(--bluish-gray-color);
+    border-color: var(--gray-color);
+    color: var(--gray-color);
+}
+
+.btn-custom {
+    background-color: var(--dark-gray);
+    color: var(--gray-color);
+    border: none;
+}
+
+.btn-custom:hover {
+    background-color: var(--bluish-gray-color);
+    color: var(--gray-color);
+}

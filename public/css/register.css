@@ -1,0 +1,5 @@
+.bg-img {
+    background-image: url('../images/books.png');
+    background-size: cover;
+    background-position: center;
+}
