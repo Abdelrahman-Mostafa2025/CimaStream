@@ -3,6 +3,7 @@
     --gray-color: #8C8D8B;
     --bluish-gray-color: #393D47;
     --dark-gray: #212121;
+    --form-bg-color: #19191F;
 }
 
 body {
@@ -12,7 +13,7 @@ body {
 }
 
 .form-bg-color {
-    background-color: var(--dark-light-color);
+    background-color: var(--form-bg-color);
 }
 
 .txt-gray {
@@ -25,7 +26,7 @@ body {
 
 
 .custom-input {
-    background-color: var(--bluish-gray-color);
+    background-color: black;
     border-color: var(--bluish-gray-color);
     color: var(--gray-color);
 }
@@ -38,11 +39,9 @@ body {
 
 .btn-custom {
     background-color: var(--dark-gray);
-    color: var(--gray-color);
     border: none;
 }
 
 .btn-custom:hover {
     background-color: var(--bluish-gray-color);
-    color: var(--gray-color);
 }

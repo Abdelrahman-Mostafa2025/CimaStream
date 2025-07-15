@@ -1,0 +1,11 @@
+.bg-img {
+    background-image: url('../images/light-background.png');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.login-logo {
+    width: 2rem;
+    height: 2rem;
+}

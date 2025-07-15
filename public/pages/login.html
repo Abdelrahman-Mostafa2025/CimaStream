@@ -3,12 +3,83 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Login</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/public/css/commonCss.css">
+    <link rel="stylesheet" href="/public/css/login.css">
+    <link rel="icon" href="/public/images/logo.svg" type="image/x-icon">
 </head>
 
 <body>
 
+
+    <div class="d-flex flex-column justify-content-center align-items-center vh-100 fs-6">
+        <div class="container overflow-hidden d-flex flex-row p-0 h-75 rounded-3 ">
+
+
+
+            <div class="form-bg-color w-25 p-5 ">
+
+                <div class="text-center ">
+                    <div class="d-flex mb-4">
+                        <img src="/public/images/logo.svg" alt="logo" class="login-logo">
+                        <h1 class="fs-4   mt-1 ms-3">
+                            CimaStream
+                        </h1>
+                    </div>
+
+                    <h2>
+                        Welcome Back
+                    </h2>
+
+                    <p class="txt-gray ">
+                        Sign in to continue your cinematic journey.
+                    </p>
+                </div>
+
+                <form class="row g-3 needs-validation mt-4  text-light" novalidate>
+
+
+                    <div class="col-md-12">
+                        <label for="validationCustom03" class="form-label">Email</label>
+                        <input type="email" class="form-control custom-input " id="validationCustom03" required>
+                    </div>
+
+                    <div class="col-md-12">
+                        <label for="validationCustom03" class="form-label">Password</label>
+                        <input type="password" class="form-control custom-input " id="validationCustom03" required>
+                    </div>
+
+                    <div class="col-12">
+                        <button class="btn btn-primary w-100 p-2 btn-custom" type="submit">Login</button>
+                    </div>
+
+                </form>
+                <p class="text-center mt-5 txt-gray">
+                    Don't have an account? <a href="/public/pages/register.html" class=" txt-gray fw-bold">Register</a>
+                </p>
+            </div>
+            <div class="bg-img w-75 p-5 d-flex flex-column justify-content-center align-items-center h-100">
+
+
+                <img src="/public/images/logo.svg" alt="CineStream Logo">
+
+                <p class=" fw-bold mt-4  fs-2  ">
+                    CineStream
+                </p>
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="/public/js/register.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
+
 
 </html>
