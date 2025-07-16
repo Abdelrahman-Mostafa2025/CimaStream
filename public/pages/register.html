@@ -22,7 +22,7 @@
                 <div class="d-flex flex-column justify-content-center align-items-center h-100 ">
                     <img src="/public/images/logo.svg" alt="CineStream Logo" class="logo ">
                     <h1 class="text-center fw-bold mt-4 mb-4 fs-2">
-                        Start Your CineStream Journey!
+                        Start Your CimaStream Journey!
                     </h1>
                     <p class="text-center fs-5">
                         Dive into a vast collection of movies and <br> personalized recommendations.
@@ -40,36 +40,42 @@
                     Unlock a world of movies and TV shows.
                 </p>
 
-                <form class="row g-3 needs-validation mt-5  text-light" novalidate>
-                    <div class="col-md-6">
+                <form class="row g-3 needs-validation mt-3  text-light" id="registerForm" novalidate>
+                    <div class="col-md-5">
                         <label for="validationCustom01" class="form-label ">First name</label>
-                        <input type="text" class="form-control custom-input " id="validationCustom01" required>
+                        <input type="text" class="form-control custom-input  validationCustom" id="validationCustom01"
+                            required>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-5">
                         <label for="validationCustom02" class="form-label">Last name</label>
-                        <input type="text" class="form-control custom-input " id="validationCustom02" required>
+                        <input type="text" class="form-control custom-input  validationCustom" id="validationCustom02"
+                            required>
                     </div>
 
-                    <div class="col-md-12">
+                    <div class="col-md-10">
                         <label for="validationCustom03" class="form-label">Email</label>
-                        <input type="email" class="form-control custom-input " id="validationCustom03" required>
+                        <input type="email" class="form-control custom-input was-validated validationCustom"
+                            id="validationCustom03" required>
                     </div>
 
-                    <div class="col-md-12">
-                        <label for="validationCustom03" class="form-label">Password</label>
-                        <input type="password" class="form-control custom-input " id="validationCustom03" required>
+                    <div class="col-md-10">
+                        <label for="validationCustom04" class="form-label">Password</label>
+                        <input type="password" class="form-control custom-input  validationCustom"
+                            id="validationCustom04" required>
                     </div>
-                    <div class="col-md-12">
-                        <label for="validationCustom03" class="form-label">Re-Password</label>
-                        <input type="password" class="form-control custom-input " id="validationCustom03" required>
+                    <div class="col-md-10">
+                        <label for="validationCustom05" class="form-label">Re-Password</label>
+                        <input type="password" class="form-control custom-input  validationCustom"
+                            id="validationCustom05" required>
                     </div>
 
-                    <div class="col-12">
+                    <div class="col-10">
+                        <div id="emailError" class="text-danger d-none mt-1" id="loginError"></div>
                         <button class="btn btn-primary w-100 p-2 btn-custom" type="submit">Register</button>
                     </div>
 
                 </form>
-                <p class="text-center mt-4 txt-gray">
+                <p class="text-center mt-4 txt-gray mb-5">
                     Already have an account? <a href="/public/pages/login.html" class=" txt-gray fw-bold">Login</a>
                 </p>
             </div>
@@ -77,7 +83,7 @@
         </div>
     </div>
 
-    <script src="/public/js/register.js"></script>
+    <script type="module" src="/public/js/register.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>

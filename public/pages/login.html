@@ -38,18 +38,21 @@
                     </p>
                 </div>
 
-                <form class="row g-3 needs-validation mt-4  text-light" novalidate>
+                <form class="row g-3 needs-validation mt-4  text-light" id="loginForm" novalidate>
 
 
                     <div class="col-md-12">
-                        <label for="validationCustom03" class="form-label">Email</label>
-                        <input type="email" class="form-control custom-input " id="validationCustom03" required>
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" class="form-control custom-input validationCustom" required>
                     </div>
 
                     <div class="col-md-12">
-                        <label for="validationCustom03" class="form-label">Password</label>
-                        <input type="password" class="form-control custom-input " id="validationCustom03" required>
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" id="password" class="form-control custom-input validationCustom"
+                            required>
                     </div>
+
+                    <div id="loginError" class="text-danger d-none mt-1"></div>
 
                     <div class="col-12">
                         <button class="btn btn-primary w-100 p-2 btn-custom" type="submit">Login</button>
@@ -76,7 +79,7 @@
         </div>
     </div>
 
-    <script src="/public/js/register.js"></script>
+    <script type="module" src="/public/js/login.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>

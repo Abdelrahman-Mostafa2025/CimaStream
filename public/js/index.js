@@ -1,2 +1,7 @@
 "use strict";
-let x = 0;
+window.addEventListener('DOMContentLoaded', () => {
+    const user = localStorage.getItem("loggedInUser");
+    if (!user) {
+        window.location.href = "/public/pages/login.html";
+    }
+});

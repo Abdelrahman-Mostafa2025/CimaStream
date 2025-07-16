@@ -42,6 +42,15 @@ body {
     border: none;
 }
 
-.btn-custom:hover {
+.btn-custom:hover,
+.btn-custom:active:focus {
     background-color: var(--bluish-gray-color);
+}
+
+.error-message {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    text-align: start;
 }
